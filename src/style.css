@@ -22,14 +22,6 @@
     min-height: 100vh;
   }
 }
-@layer base {
-  * {
-    @apply borde;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
 
 @layer components {
   #app {
@@ -42,17 +34,4 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-} */
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 } */

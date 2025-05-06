@@ -10,6 +10,9 @@ const increment = () => {
 const decrement = () => {
   count.value--
 }
+const reset = () => {
+  count.value = 0
+}
 const rawHtml: Ref<string> = ref('<strong>This is bold text</strong>')
 </script>
 
@@ -23,5 +26,6 @@ const rawHtml: Ref<string> = ref('<strong>This is bold text</strong>')
     <p class="text-xl text-gray-600 mb-8">Counter: {{ count }}</p>
     <button @click="increment" class="bg-blue-500 text-white px-4 py-2 rounded">Increment</button>
     <button @click="decrement" class="bg-red-500 hover:bg-red-400 text-white px-4 py-2 rounded ml-4">Decrement</button>
+    <button @click="reset" class="bg-gray-500 hover:bg-gray-400 text-white px-4 py-2 rounded ml-4">Reset</button>
   </div>
 </template>
